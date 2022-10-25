@@ -6,13 +6,31 @@ import MovieListHeading from "../../components/MovieListHeading";
 import SearchBox from "../../components/SearchBox";
 
 function App() {
+
   const [movies, setMovies] = useState([]);
   const [searchValue, setSearchValue] = useState('');
+
+  const getMovieRequest = async(searchValue) => {
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=aafe1255`;
+
+    const response = await fetch(url);
+    const responseJson = await response.json();
+
+    if (responseJson.Search) {
+      setMovies(responseJson.Search);
+    }
+  };
+
+  useEffect(() => {
+    getMovieRequest(searchValue)
+  }, [searchValue]);
+
+
   return (
     <div className="container-fluid shmetflix">
       <div className="row d-flex align-items-center mt-4 mb-4">
         <MovieListHeading heading="Shmetflix" />
-        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue } />
+        <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
 
       <div className="row">

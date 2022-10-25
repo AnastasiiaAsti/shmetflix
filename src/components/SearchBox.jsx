@@ -6,7 +6,7 @@ export default function SearchBox(props) {
       <input
         className="form-control"
         value={props.value}
-        onChange={(evt) => props.setSearchValue(evt.target.value)}
+        onChange={(event) => props.setSearchValue(event.target.value)}
         placeholder="Type in to search a movie.."
       />
     </div>
