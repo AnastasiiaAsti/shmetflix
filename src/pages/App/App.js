@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MovieList from "../../components/MovieList/MovieList";
  
 
 function App() {
@@ -77,10 +78,11 @@ function App() {
   }
   ]);
   return (
-    <div className="App">
- 
-        <h1>Shmetflix</h1>
-
+    <div className="container-fluid shmetflix">
+      <div className="row">
+        <MovieList
+          movies={movies} />
+      </div>
     </div>
   );
 }
