@@ -12,6 +12,7 @@
 .image-container {
   position: relative;
   transition: transform 0.2s;
+  width: fit-content;
 }
 
 .image-container:hover {
