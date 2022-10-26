@@ -3,13 +3,7 @@
   color: #fff;
 }
 
-.shmetflix > .row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
-}
-
 .image-container {
-  position: relative;
   transition: transform 0.2s;
 }
 
@@ -17,3 +11,4 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+
