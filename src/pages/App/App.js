@@ -48,7 +48,7 @@ function App() {
         <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
 
-      <div className="row">
+      <div className="row movielist">
         <MovieList
           movies={movies}
           handleClick={addFavouriteMovie}
