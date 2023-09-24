@@ -1,5 +1,6 @@
 # Shmetflix
 
+Check it out <a href="https://shmetflix.netlify.app/">HERE</a>
 
 A simple movie app that utilizes API to search movie database and add movies to your favourites.
 Discover a simple yet powerful website that harnesses the capabilities of the OMB (Open Movie Database) API to bring you a vast collection of movie titles at your fingertips. With Shmetflix, finding the perfect movie to watch has never been easier.
